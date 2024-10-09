@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday!</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Landing Page -->
+    <section class="landing">
+        <div class="landing-content">
+            <h1>Happy Birthday!</h1>
+            <p>Wishing you the happiest of birthdays. I know we haven’t spoken, but I wanted to send you a little something.</p>
+            <button id="exploreButton">Click to Explore</button>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="main hidden">
+        <div class="memories-timeline">
+            <h2>Your memories which I like the most</h2>
+            <div class="memory-item fade-in">
+                <img src="C:\Users\Chinmay\Desktop\bday\img\WhatsApp Image 2024-10-09 at 7.24.25 PM.jpeg" style="height: 250px; width: 250px;" alt="Memory 1">
+                <p>Remember this day? It was magical! I called you "MAZI LAXMI"</p>
+            </div>
+            <div class="memory-item fade-in">
+                <img src="C:\Users\Chinmay\Desktop\bday\img\WhatsApp Image 2024-10-09 at 7.24.24 PM.jpeg" style="height: 250px; width: 250px;" alt="Memory 2">
+                <p>One of the best times!</p>
+            </div>
+        </div>
+
+        <div class="birthday-countdown">
+            <h2>Countdown to Your Special Day</h2>
+            <p id="countdown"></p>
+        </div>
+
+        <!-- Wishing Wall -->
+        <div class="wishing-wall">
+            <h2>Special Birthday Wishes Just for You</h2>
+            <div class="wishes">
+                <button class="wish-btn" data-message="Wishing you a day filled with love and joy!">🌟</button>
+                <button class="wish-btn" data-message="May your birthday be as beautiful as you are!">💖</button>
+                <button class="wish-btn" data-message="Hope this year brings all your dreams to life!">✨</button>
+                <button class="wish-btn" data-message="You deserve nothing but happiness on your special day!">🎉</button>
+                <button class="wish-btn" data-message="Sending you love and light on your birthday!">🌈</button>
+            </div>
+            <div class="wish-message">
+                <p>Click on any of the stars or hearts to reveal your birthday wishes!</p>
+                <div id="wish-text"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- End Page -->
+    <section class="end hidden">
+        <h2>Final Birthday Wish</h2>
+        <p>May this year bring you all the happiness in the world. Happy Birthday once again!</p>
+        <div class="balloon-animation">
+            <div class="balloon"></div>
+            <div class="balloon"></div>
+            <div class="balloon"></div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,172 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fdf7f6;
+    color: #333;
+}
+
+/* Landing Page */
+.landing {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f9ebf1;
+    text-align: center;
+}
+
+.landing-content h1 {
+    font-size: 3em;
+    color: #ff6b81;
+}
+
+.landing-content p {
+    font-size: 1.2em;
+    color: #555;
+}
+
+button {
+    background-color: #ff6b81;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 20px;
+    font-size: 1.2em;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff3e54;
+}
+
+/* Main Content */
+.main {
+    display: none;
+    padding: 50px;
+    text-align: center;
+    background-color: #fef0e1;
+}
+
+.memory-item {
+    margin-bottom: 30px;
+}
+
+.memory-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.memory-item p {
+    font-size: 1.1em;
+    color: #666;
+}
+
+.birthday-countdown h2 {
+    color: #ff6b81;
+}
+
+/* Wishing Wall */
+.wishing-wall {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.wishes {
+    margin: 20px 0;
+}
+
+.wish-btn {
+    font-size: 2em;
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin: 10px;
+    transition: transform 0.3s;
+}
+
+.wish-btn:hover {
+    transform: scale(1.2);
+}
+
+.wish-message {
+    margin-top: 20px;
+    font-size: 1.3em;
+    color: #ff6b81;
+}
+
+#wish-text {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #555;
+    font-size: 1.5em;
+}
+
+/* End Page */
+.end {
+    display: none;
+    text-align: center;
+    padding: 50px;
+}
+
+.balloon-animation {
+    position: relative;
+    height: 200px;
+}
+
+.balloon {
+    width: 30px;
+    height: 50px;
+    background-color: #ff6b81;
+    border-radius: 50% 50% 50% 50%;
+    position: absolute;
+    bottom: 0;
+    animation: floatUp 4s ease-in-out infinite;
+}
+
+.balloon:nth-child(2) {
+    left: 50px;
+    animation-delay: 1s;
+}
+
+.balloon:nth-child(3) {
+    left: 100px;
+    animation-delay: 2s;
+}
+
+@keyframes floatUp {
+    0% {
+        bottom: 0;
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(10px);
+    }
+    100% {
+        bottom: 100%;
+        transform: translateX(0);
+    }
+}
+
+/* Hidden Section Class */
+.hidden {
+    display: none;
+}
+
+/* Animation Classes */
+.fade-in {
+    animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
